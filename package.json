@@ -1,0 +1,19 @@
+{
+  "name": "calendar-dsl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukhorukovS/calendar-dsl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SukhorukovS/calendar-dsl/issues"
+  },
+  "homepage": "https://github.com/SukhorukovS/calendar-dsl#readme"
+}
