@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
+    "compile": "npm run antlr4-js",
+    "antlr4-js": "java -Xmx500M -cp '/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH' org.antlr.v4.Tool  -Dlanguage=JavaScript -lib grammars -o lib -visitor -Xexact-output-dir grammars/Calendar.g4",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SukhorukovS/calendar-dsl/issues"
   },
-  "homepage": "https://github.com/SukhorukovS/calendar-dsl#readme"
+  "homepage": "https://github.com/SukhorukovS/calendar-dsl#readme",
+  "dependencies": {
+    "antlr4": "^4.13.1-patch-1"
+  }
 }
