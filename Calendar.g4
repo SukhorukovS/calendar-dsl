@@ -14,7 +14,7 @@ grammar Calendar;
 
 calendar            : line+ EOF ;
 
-line                : beginning name WHITESPACE (single_event | periodical_event) NEWLINE;
+line                : beginning name WHITESPACE (single_event | periodical_event) NEWLINE?;
 
 single_event        : date WHITESPACE? (AT time)?;
 
